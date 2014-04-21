@@ -1,6 +1,5 @@
 <?php
-require "/../includes/Database.php";
-
+//
 class HomeHandlerTest extends PHPUnit_Framework_TestCase
 {
     // ...
