@@ -1,13 +1,17 @@
 <?php
 
-require("handlers/DashBoardHandler.php");
+require("handlers/HomeHandler.php");
+require("handlers/ArticleHandler.php");
 require("libs/Toro.php");
 
-
-ToroHook::add("404", function() {
-    echo "Not found!".$this;
-});
-
 Toro::serve(array(
-    "/" => "DashboardHandler"
+    "/" => "HomeHandler",
+    '/article/:alpha' => 'ArticleHandler'
 ));
+
+ToroHook::add('404', function() {
+    // header('HTTP/1.0 404 Not Found');
+    // include('templates/404.tpl.php');
+    // exit;
+	echo "404 Not Found!";
+});
