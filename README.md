@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/yangboz/finna-be-octo-ninja.png)](https://travis-ci.org/yangboz/finna-be-octo-ninja)
+
 finna-be-octo-ninja
 ===================
 
